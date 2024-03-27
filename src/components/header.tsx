@@ -11,8 +11,8 @@ import {
 export default function Header() {
   return (
     <header className="flex items-center mx-auto justify-between w-full bg-var-blue border-b-[1px] border-var-gray">
-      <div className="flex items-center mx-auto px-7 py-4 justify-between w-full max-w-7xl">
-        <div className="text-white">WorkHub</div>
+      <div className="flex items-center mx-auto px-7 py-3 justify-between w-full max-w-7xl">
+        <div className="text-white font-bold">WorkHub</div>
         <div className="hidden md:block">
           <Image src="/icons/star.svg" width={26} height={26} alt="star" />
         </div>
