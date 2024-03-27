@@ -1,5 +1,5 @@
 "use client";
-
+import { MouseEvent, ReactNode } from "react";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,7 +89,7 @@ export default function Cards() {
 
   useEffect(() => {
     const now = new Date().getTime();
-    const expiredData = JSON.parse(localStorage.getItem("expiredData"));
+    const expiredData = JSON.parse(localStorage.getItem("expiredData")!);
 
     if (expiredData) {
       if (now > expiredData) {
@@ -99,7 +99,7 @@ export default function Cards() {
     }
 
     if (localStorage.getItem("sites")) {
-      const sites = JSON.parse(localStorage.getItem("sites"));
+      const sites = JSON.parse(localStorage.getItem("sites")!);
       setData(sites);
     } else {
       console.log("um novo registro no localstorage foi criado");
@@ -107,7 +107,9 @@ export default function Cards() {
     }
   }, []);
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (
+    event: MouseEvent<HTMLButtonElement | HTMLAnchorElement>
+  ) => {
     const expiredData = localStorage.getItem("expiredData");
     if (!expiredData) {
       const timeNow = new Date().getTime();
@@ -117,7 +119,7 @@ export default function Cards() {
     }
 
     const clickedElementName = event.currentTarget.id;
-    const sites = JSON.parse(localStorage.getItem("sites"));
+    const sites = JSON.parse(localStorage.getItem("sites")!);
     const NewArrayOfSites = sites.map((objeto: Item) => {
       if (objeto.name === clickedElementName) {
         return { ...objeto, status: true };
@@ -132,7 +134,7 @@ export default function Cards() {
 
   return (
     <>
-      {data?.map((item: item) => (
+      {data?.map((item: Item) => (
         <Link
           href={item.link}
           key={item.name}
