@@ -1,40 +1,26 @@
-<<<<<<< HEAD
-# vagas-hub
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Workhub
+![Texto alternativo](https://github.com/Rinpiki/vagas-hub/assets/74790193/fad807e6-94e1-4823-b400-4345563dd6a2)
 
-## Getting Started
+O projeto consiste em um site que reúne vários cards com de sites de vagas de emprego, como Indeed e Geekhunter. Cada card representa um site de onde o usuário pode buscar vagas de emprego. Ao clicar em um card, o usuário é direcionado diretamente para o site correspondente. Uma funcionalidade interessante é que, após visitar um site através do card, o card correspondente fica marcado em verde, indicando que o usuário já visitou esse site. 
 
-First, run the development server:
+Além disso, há uma característica de temporização implementada: após 24 horas, o estado do card é redefinido e volta à sua cor normal, permitindo ao usuário acompanhar facilmente quais sites já foram visitados recentemente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **📋 Exibição de Cards de Sites de Vagas**: Os cards apresentam sites de vagas de emprego.
+- **🔗 Redirecionamento para Sites de Vagas**: Ao clicar em um card, o usuário é redirecionado para o site correspondente.
+- **👀 Indicação de Visita**: Os cards visitados pelos usuários são marcados com uma cor verde, facilitando a identificação dos sites já acessados.
+- **⏰ Reset Automático**: Após 24 horas, o estado de visita dos cards é resetado, voltando à sua cor normal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologias Utilizadas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js 14**: Framework React para desenvolvimento web.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática à linguagem.
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida e eficiente.
+- **Shadcn**: Shadcn é um conjunto de componentes para UI em React que facilita o desenvolvimento web..
 
-## Learn More
+Este projeto visa fornecer aos usuários uma maneira conveniente de acessar os principais sites de vagas de emprego disponíveis online, ao mesmo tempo em que oferece uma experiência de usuário intuitiva e eficiente.
 
-To learn more about Next.js, take a look at the following resources:
+> [!CAUTION]
+> O estado do cartão é armazenado no localStorage. Se os dados do localStorage forem apagados, o estado do cartão será redefinido.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> master
