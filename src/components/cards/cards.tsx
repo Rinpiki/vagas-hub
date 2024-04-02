@@ -16,31 +16,34 @@ export default function Cards() {
   useEffect(() => {
     const now = new Date().getTime();
     const expiredData = JSON.parse(localStorage.getItem("expiredData")!);
-
+    // se tiver dados no localstorage, vai ser apagado
     if (expiredData) {
       if (now > expiredData) {
-        console.log("Limpeza do localStorage");
+        //console.log("Limpeza do localStorage");
         localStorage.clear();
       }
     }
-
+    //se existir ele ira ser setado no useState
     if (localStorage.getItem("sites")) {
       const sites = JSON.parse(localStorage.getItem("sites")!);
       setData(sites);
     } else {
-      console.log("um novo registro no localstorage foi criado");
+      //caso nao exista, um novo dado sera setado no localstorage
+      //console.log("um novo registro no localstorage foi criado");
       localStorage.setItem("sites", JSON.stringify(dataSites));
     }
   }, []);
 
+  //ao clicar em um card essa funcao sera responsavel por gerir os estados dos cards
   const handleClick = (
     event: MouseEvent<HTMLButtonElement | HTMLAnchorElement>
   ) => {
+    // caso nao exista, um novo dado sera criado
     const expiredData = localStorage.getItem("expiredData");
     if (!expiredData) {
       const timeNow = new Date().getTime();
       const expireTime = timeNow + 24 * 60 * 60 * 1000;
-      console.log(timeNow);
+      //console.log(timeNow);
       localStorage.setItem("expiredData", JSON.stringify(expireTime));
     }
 
