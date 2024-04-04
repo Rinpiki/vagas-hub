@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import dataSites from "../data/data";
+
 export default function Cards() {
   const [data, setData] = useState([]);
   interface Item {
@@ -78,11 +79,16 @@ export default function Cards() {
             `}
           >
             <div className="sm:hidden">
-              <Image src={item.image} width={70} height={70} alt="img thumb" />
+              <Image
+                src={`/${item.image}`}
+                width={70}
+                height={70}
+                alt="img thumb"
+              />
             </div>
             <div className="hidden sm:flex">
               <Image
-                src={item.image}
+                src={`/${item.image}`}
                 width={100}
                 height={100}
                 alt="img thumb"
