@@ -2,7 +2,7 @@ const dataSites = [
   {
     name: "Indeed",
     link: "https://www.indeed.com",
-    image: "/thumb/indeed",
+    image: "/thumb/ind.png",
     status: false,
   },
   {
