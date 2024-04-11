@@ -26,19 +26,19 @@ const dataSites = [
   {
     name: "GeekHunter",
     link: "https://www.geekhunter.com.br/",
-    image: "/Thumb/geekhunter.png",
+    image: "/img/geekhunter.png",
     status: false,
   },
   {
     name: "Catho",
     link: "https://www.catho.com.br/",
-    image: "/Thumb/catho.png",
+    image: "/img/catho.png",
     status: false,
   },
   {
     name: "Gupy",
     link: "https://www.gupy.io/",
-    image: "/thumb/gupy.png",
+    image: "/img/gupy.png",
     status: false,
   },
   {
