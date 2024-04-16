@@ -24,3 +24,5 @@ Este projeto visa fornecer aos usuários uma maneira conveniente de acessar os p
 > [!CAUTION]
 > O estado do cartão é armazenado no localStorage. Se os dados do localStorage forem apagados, o estado do cartão será redefinido.
 
+## Link do projeto
+> https://workhubbr.vercel.app/
