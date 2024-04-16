@@ -6,7 +6,7 @@ import Link from "next/link";
 import dataSites from "../data/data";
 
 export default function Cards() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Item[]>([]);
   interface Item {
     name: string;
     link: string;
