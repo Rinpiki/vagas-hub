@@ -26,19 +26,19 @@ const dataSites = [
   {
     name: "GeekHunter",
     link: "https://www.geekhunter.com.br/",
-    image: "/Thumb/geekhunter.png",
+    image: "/img/geekhunter.png",
     status: false,
   },
   {
     name: "Catho",
     link: "https://www.catho.com.br/",
-    image: "/Thumb/catho.png",
+    image: "/img/catho.png",
     status: false,
   },
   {
     name: "Gupy",
     link: "https://www.gupy.io/",
-    image: "/thumb/gupy.png",
+    image: "/img/gupy.png",
     status: false,
   },
   {
@@ -62,13 +62,13 @@ const dataSites = [
   {
     name: "bne",
     link: "https://www.bne.com.br/",
-    image: "img/bne.png",
+    image: "/img/bne.png",
     status: false,
   },
   {
     name: "Trabalha Brasil",
     link: "https://www.trabalhabrasil.com.br/",
-    image: "img/tb.png",
+    image: "/img/tb.png",
     status: false,
   },
 ];
