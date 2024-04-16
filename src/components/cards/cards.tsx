@@ -29,9 +29,10 @@ export default function Cards() {
       const sites = JSON.parse(localStorage.getItem("sites")!);
       setData(sites);
     } else {
-      //caso nao exista, um novo dado sera setado no localstorage
+      //caso nao exista, um novo dado sera setado no localstorage e no useState
       //console.log("um novo registro no localstorage foi criado");
       localStorage.setItem("sites", JSON.stringify(dataSites));
+      setData(dataSites);
     }
   }, []);
 

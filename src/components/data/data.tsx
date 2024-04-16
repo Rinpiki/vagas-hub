@@ -62,13 +62,13 @@ const dataSites = [
   {
     name: "bne",
     link: "https://www.bne.com.br/",
-    image: "img/bne.png",
+    image: "/img/bne.png",
     status: false,
   },
   {
     name: "Trabalha Brasil",
     link: "https://www.trabalhabrasil.com.br/",
-    image: "img/tb.png",
+    image: "/img/tb.png",
     status: false,
   },
 ];
